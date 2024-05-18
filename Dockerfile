@@ -1,6 +1,6 @@
 # Dockerfile
 # LTS = 18.18 as of 10/10/23
-FROM node:18.18-alpine
+FROM node:20-alpine
 
 # Create the directory on the node image
 # where our Next.js app will live
@@ -24,4 +24,5 @@ EXPOSE 3000
 LABEL maintainer="Viktor Donovic <viktor.donovic@zuyd.nl>"
 
 # Run dev, as we would via the command line
+# Should be npm run build and then npm run start
 CMD npm run dev

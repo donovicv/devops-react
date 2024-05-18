@@ -1,7 +1,12 @@
 import Card from "./ui/Card";
 
 async function getAllPokemon() {
-  const url = process.env.BACKEND_URL + process.env.BACKEND_API_PATH;
+
+  const url = process.env.NEXT_PUBLIC_BACKEND_URL! + process.env.NEXT_PUBLIC_BACKEND_API_PATH!; 
+  
+  if (!url) {
+    throw new Error('Env not set')
+  }
   const response = await fetch(url);
 
   if (!response.ok) {
