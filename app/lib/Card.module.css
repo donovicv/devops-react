@@ -1,51 +1,51 @@
 .card {
-    flex: 1 1 300px;
-    position: fixed;
-    background-color: hsl(var(--bkg));
-    box-shadow: 2px 2px 40px hsl(var(--muted) / .5);
-    padding: var(--space-lg);
-    border-radius: var(--round-lg);
-    border-top: .1em solid white;
-    border-left: .1em solid white;
-    max-width: fit-content;
-    max-height: fit-content;
+  flex: 1 1 300px;
+  position: fixed;
+  background-color: hsl(var(--bkg));
+  box-shadow: 2px 2px 40px hsl(var(--muted) / 0.5);
+  padding: var(--space-lg);
+  border-radius: var(--round-lg);
+  border-top: 0.1em solid white;
+  border-left: 0.1em solid white;
+  max-width: fit-content;
+  max-height: fit-content;
 }
 
 .body {
-    max-height: fit-content;
-    max-width: fit-content;
+  max-height: fit-content;
+  max-width: fit-content;
 }
 
 .title {
-    max-height: fit-content;
-    max-width: fit-content;
+  max-height: fit-content;
+  max-width: fit-content;
 }
 
 .subtitle {
-    max-height: fit-content;
-    max-width: fit-content;
+  max-height: fit-content;
+  max-width: fit-content;
 }
 
 .image {
-    max-height: fit-content;
-    height: 400px;
-    width: 400px;
-    /* width: 50%; */
-    /* max-width: 50%; */
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: var(--round-md);
+  max-height: fit-content;
+  height: 400px;
+  width: 400px;
+  /* width: 50%; */
+  /* max-width: 50%; */
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: var(--round-md);
 }
 
 .indicator {
-    position: absolute;
-    right: 0;
-    background-color: hsl(var(--accent));
-    color: hsl(var(--bkg));
-    border-radius: var(--round-full);
-    aspect-ratio: 1/1;
-    display: grid;
-    place-items: center;
-    padding: var(--space-sm);
-    transform: translate(50%, -50%);
+  position: absolute;
+  right: 0;
+  background-color: hsl(var(--accent));
+  color: hsl(var(--bkg));
+  border-radius: var(--round-full);
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  padding: var(--space-sm);
+  transform: translate(50%, -50%);
 }
