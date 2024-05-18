@@ -3,7 +3,7 @@ name: Pokepy frontend build
 on:
   push:
     branches:
-      - mainx
+      - main
 
 jobs:
   build:
